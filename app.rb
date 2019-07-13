@@ -6,6 +6,7 @@ class App < Sinatra::Base
     erb :index
   end
 
+
   post '/' do
     text_from_user = params[:user_text]
  
@@ -13,4 +14,5 @@ class App < Sinatra::Base
  
     erb :results
   end
+  
 end
